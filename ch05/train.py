@@ -17,6 +17,7 @@ max_epoch = 100
 
 # 学習データの読み込み
 corpus, word_to_id, id_to_word = ptb.load_data('train')
+print(corpus)
 corpus_size = 1000  # テスト用にデータセットを小さくする
 corpus = corpus[:corpus_size]
 vocab_size = int(max(corpus) + 1)
@@ -30,3 +31,4 @@ trainer = RnnlmTrainer(model, optimizer)
 
 trainer.fit(xs, ts, max_epoch, batch_size, time_size)
 trainer.plot()
+print("ch05")

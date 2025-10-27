@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Current File",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+        {
+            "name": "Python: ch05/train.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/ch05/train.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}/ch05"
+        }
+  ]
+}
